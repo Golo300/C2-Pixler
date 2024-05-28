@@ -2,8 +2,9 @@ import socket
 import time
 
 # Server-Einstellungen
-SERVER_HOST = '127.0.0.1'
+SERVER_HOST = "127.0.0.1"
 SERVER_PORT = 9999
+
 
 def receive_data(client_socket):
     try:
@@ -12,7 +13,7 @@ def receive_data(client_socket):
         print(f"Zieladresse empfangen: {target_address}")
 
         # Empfange Bilddatei
-        with open('target_image.jpg', 'wb') as f:
+        with open("target_image.jpg", "wb") as f:
             while True:
                 bytes_read = client_socket.recv(4096)
                 if not bytes_read:
@@ -23,7 +24,8 @@ def receive_data(client_socket):
         print(f"Fehler beim Empfangen von Daten: {e}")
     finally:
         pass
-        #client_socket.close()
+        # client_socket.close()
+
 
 if __name__ == "__main__":
     while True:
