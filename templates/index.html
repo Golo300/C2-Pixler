@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>C2 Server Control Panel</title>
+  </head>
+  <body>
+    <div>
+      <h1>Control Panel</h1>
+      <form method="POST" enctype="multipart/form-data">
+        <label for="target_address">Target Address:</label>
+        <input type="text" id="target_address" name="target_address" value="{{ target_address }}">
+        <br><br>
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image">
+        <br><br>
+        <button type="submit">Update</button>
+      </form>
+    </div>
+  </body>
+</html>
