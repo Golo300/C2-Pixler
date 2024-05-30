@@ -6,3 +6,4 @@ services:
     container_name: c2-pixler
     ports:
       - 5000:5000
+      - 9999:9999
