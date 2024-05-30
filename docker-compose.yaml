@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  c2-pixler:
+    image: ghcr.io/golo300/c2-pixler:unstable
+    container_name: c2-pixler
+    ports:
+      - 5000:5000

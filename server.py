@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import socket
 import threading
 from flask import Flask, request, render_template, send_from_directory
