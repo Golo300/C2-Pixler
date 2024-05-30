@@ -55,7 +55,7 @@
           pkgs.python3
         ];
         buildInputs = [
-          pkgs.python39Packages.flask
+          pkgs.python3Packages.flask
         ];
       };
 
