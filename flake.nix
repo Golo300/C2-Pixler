@@ -36,6 +36,11 @@
         tag = "unstable";
         contents = with pkgs; [ cacert ];
         config = {
+          Labels = {
+            "org.opencontainers.image.source" = "https://github.com/Golo300/C2-Pixler";
+            "org.opencontainers.image.description" = "C2-Pixler Server image, follow golo300 on GitHub!!!";
+            "org.opencontainers.image.licenses" = "UNKNOWN";
+          };
           Entrypoint = [ "${python-script}/bin/server.py" ];
           Env = [ "SSL_CERT_FILE=${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt" "PYTHONUNBUFFERED=1" ];
         };
