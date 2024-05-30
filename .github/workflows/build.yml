@@ -31,7 +31,7 @@ jobs:
   containerimage:
     name: Build and push container image
     runs-on: ubuntu-latest
-    needs: [ test ]
+    needs: [ codeformat ]
     
     steps:
       - name: Checkout repository

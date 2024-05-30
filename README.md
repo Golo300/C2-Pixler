@@ -1,3 +1,5 @@
+[![CI/CD](https://github.com/Golo300/C2-Pixler/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/Golo300/C2-Pixler/actions/workflows/build.yml)
+
 # C2-Pixler
 
 ```bash
