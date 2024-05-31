@@ -2,6 +2,8 @@
 
 # C2-Pixler
 
+Command and control server for pixelflut clients.
+
 ```bash
 # format code
 nix fmt
